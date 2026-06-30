@@ -51,3 +51,12 @@
   animation-timeline: view();
   animation-range: entry 20% cover 45%;
 }
+
+.about-image,
+.about-content {
+  opacity: 0;
+  transform: translateY(44px);
+  animation: fadeUp 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 15% cover 35%;
+}

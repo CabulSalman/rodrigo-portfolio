@@ -75,3 +75,32 @@
     max-width: 280px;
   }
 }
+
+@media (max-width: 700px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 90px 22px;
+  }
+
+  .about-image {
+    min-height: 420px;
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: clamp(42px, 14vw, 64px);
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin-bottom: 34px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .about-roles {
+    line-height: 1.8;
+  }
+}

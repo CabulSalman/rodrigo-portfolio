@@ -237,3 +237,86 @@ body {
   letter-spacing: -4px;
   font-weight: 900;
 }
+
+.about-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 140px 48px;
+
+    background:#0b0b0a;
+
+}
+
+.about-image{
+
+    width:min(650px,90vw);
+
+    aspect-ratio:4/5;
+
+    background:#171717;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:grid;
+
+    place-items:center;
+
+    overflow: hidden;
+}
+
+.image-placeholder {
+  color: #bdb6a9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+.about-content{
+
+    max-width:760px;
+
+    text-align:center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-content h2 {
+    margin: 18px 0 36px;
+
+    font-size: clamp(52px, 6vw, 92px);
+
+    line-height: .92;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+}
+
+.about-content p {
+  max-width: 660px;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.55;
+  color: #d6d0c4;
+}
+
+.about-roles {
+  margin-top: 42px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px !important;
+  color: #bdb6a9 !important;
+}
