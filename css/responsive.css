@@ -104,3 +104,65 @@
     line-height: 1.8;
   }
 }
+
+@media (max-width: 800px) {
+  .case-study-index {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 90px 22px;
+    overflow-x: hidden;
+  }
+
+  .case-item {
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    padding: 28px 0;
+  }
+
+  .case-item h3 {
+    font-size: clamp(30px, 10vw, 48px);
+    letter-spacing: -1.5px;
+  }
+
+  .case-preview {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .case-item h3 {
+    font-size: clamp(28px, 9vw, 42px);
+    line-height: 1;
+    letter-spacing: -1px;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .case-number {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-section {
+    padding: 100px 22px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header h2 {
+    font-size: clamp(44px, 14vw, 82px);
+    letter-spacing: -2px;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+}

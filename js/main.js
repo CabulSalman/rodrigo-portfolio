@@ -18,3 +18,12 @@ if (hero && heroBg && heroContent) {
     heroContent.style.transform = "translate(0, 0)";
   });
 }
+
+const caseItems = document.querySelectorAll(".case-item");
+const casePreviewText = document.querySelector("#casePreviewText");
+
+caseItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    casePreviewText.textContent = item.dataset.preview;
+  });
+});
