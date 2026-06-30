@@ -50,9 +50,9 @@
   }
 
   .hero-title {
-    font-size: clamp(44px, 18vw, 76px);
-    line-height: 0.82;
-    letter-spacing: -2px;
+    font-size: clamp(38px, 15vw, 64px);
+    line-height: 0.86;
+    letter-spacing: -1px;
     max-width: 100%;
   }
 
@@ -64,6 +64,7 @@
   .hero-title span {
     max-width: 100%;
     display: block;
+    white-space: nowrap;
   }
 
   .hero-phrase {
