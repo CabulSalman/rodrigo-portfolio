@@ -1,0 +1,64 @@
+@media (max-width: 900px) {
+  .hero {
+    padding: 32px 24px;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content {
+    min-height: calc(100vh - 100px);
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: clamp(72px, 22vw, 150px);
+    line-height: 0.72;
+    letter-spacing: -5px;
+  }
+
+  .hero-phrase {
+    margin-top: 80px;
+    font-size: clamp(26px, 7vw, 38px);
+  }
+
+  .hero-roles {
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 2.5px;
+  }
+
+  .scroll-cue {
+    bottom: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 28px 18px;
+    min-height: 110vh;
+  }
+
+  .nav {
+    gap: 14px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: clamp(64px, 25vw, 120px);
+    letter-spacing: -4px;
+  }
+
+  .hero-phrase {
+    margin-top: 70px;
+  }
+
+  .hero-roles {
+    max-width: 280px;
+  }
+}

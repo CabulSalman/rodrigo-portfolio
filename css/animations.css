@@ -1,0 +1,53 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title span,
+.hero-phrase,
+.hero-roles,
+.scroll-cue,
+.nav {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-title span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero-title span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.hero-phrase {
+  animation-delay: 0.55s;
+}
+
+.hero-roles {
+  animation-delay: 0.75s;
+}
+
+.scroll-cue {
+  animation-delay: 1s;
+}
+
+.nav {
+  animation-delay: 1.15s;
+}
+
+.intro-scene .section-kicker,
+.intro-scene h2 {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 45%;
+}
