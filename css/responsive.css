@@ -50,8 +50,20 @@
   }
 
   .hero-title {
-    font-size: clamp(64px, 25vw, 120px);
-    letter-spacing: -4px;
+    font-size: clamp(44px, 18vw, 76px);
+    line-height: 0.82;
+    letter-spacing: -2px;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .hero-title span {
+    max-width: 100%;
+    display: block;
   }
 
   .hero-phrase {
