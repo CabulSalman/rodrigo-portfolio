@@ -27,3 +27,39 @@ caseItems.forEach((item) => {
     casePreviewText.textContent = item.dataset.preview;
   });
 });
+
+const funnelNodes = document.querySelectorAll(".funnel-node");
+const funnelTitle = document.querySelector("#funnelTitle");
+const funnelDescription = document.querySelector("#funnelDescription");
+const funnelStage = document.querySelector("#funnelStage");
+const funnelRoleList = document.querySelector("#funnelRoleList");
+const evidenceDisplay = document.querySelector("#evidenceDisplay");
+
+function activateFunnelNode(node) {
+  funnelNodes.forEach((item) => item.classList.remove("active"));
+
+  node.classList.add("active");
+
+  funnelTitle.textContent = node.dataset.title;
+  funnelDescription.textContent = node.dataset.description;
+  funnelStage.textContent = node.dataset.stage;
+
+  funnelRoleList.innerHTML = "";
+
+  node.dataset.role.split("|").forEach((item) => {
+  const li = document.createElement("li");
+  li.textContent = item;
+  funnelRoleList.appendChild(li);
+  });
+}
+
+
+funnelNodes.forEach((node) => {
+  node.addEventListener("click", () => {
+    activateFunnelNode(node);
+  });
+});
+
+if (funnelNodes.length > 0) {
+  activateFunnelNode(funnelNodes[0]);
+}
