@@ -300,3 +300,35 @@
     }
 
 }
+
+@media (max-width: 768px) {
+  .content-system {
+    grid-template-columns: 1fr;
+  }
+
+  .content-system article {
+    padding: 32px 24px;
+  }
+
+  .content-challenge > p:last-child {
+    font-size: clamp(28px, 9vw, 44px);
+  }
+}
+
+@media(max-width:768px){
+
+    .content-library-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+  .web-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .web-case-grid article {
+    padding: 32px 24px;
+  }
+}
