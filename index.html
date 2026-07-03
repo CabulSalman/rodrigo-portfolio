@@ -157,6 +157,7 @@
                     <div class="funnel-progress"></div>
 
                     <button class="funnel-node active"
+                        data-step="metaAds"
                         data-stage="ETAPA 01"
                         data-title="Meta Ads"
                         data-description="Captar prospectos calificados para dirigirlos al embudo de conversión mediante una estrategia publicitaria orientada a registros."
@@ -165,6 +166,7 @@
                     </button>
 
                     <button class="funnel-node"
+                        data-step="landing"
                         data-stage="ETAPA 02"
                         data-title="Landing de registro"
                         data-description="Convertir el interés generado por la publicidad en registros efectivos para el seminario."
@@ -173,6 +175,7 @@
                     </button>
 
                     <button class="funnel-node"
+                        data-step="registro"
                         data-stage="ETAPA 03"
                         data-title="Registro"
                         data-description="Recopilar la información de contacto de los prospectos para incorporarlos al proceso comercial."
@@ -181,6 +184,7 @@
                     </button>
 
                     <button class="funnel-node"
+                        data-step="nutricion"
                         data-stage="ETAPA 04"
                         data-title="Nutrición"
                         data-description="Mantener el interés del prospecto hasta la fecha del seminario y reducir el abandono."
@@ -189,6 +193,7 @@
                     </button>
 
                     <button class="funnel-node"
+                        data-step="seminario"
                         data-stage="ETAPA 05"
                         data-title="Seminario"
                         data-description="Generar confianza mediante contenido de valor y presentar la certificación como la siguiente etapa natural."
@@ -197,14 +202,16 @@
                     </button>
 
                     <button class="funnel-node"
+                        data-step="venta"
                         data-stage="ETAPA 06"
                         data-title="Venta"
                         data-description="Convertir a los asistentes interesados en clientes del proceso de certificación."
-                        data-role="Diseñé el flujo hacia la landing de compra|Optimicé el proceso de conversión">
+                        data-role="Diseñé las landings de compra|Optimicé el proceso de conversión">
                         Venta
                     </button>
 
                     <button class="funnel-node"
+                        data-step="seguimiento"
                         data-stage="ETAPA 07"
                         data-title="Seguimiento comercial"
                         data-description="Recuperar oportunidades de venta y aumentar la conversión de prospectos que no compraron inicialmente."
@@ -244,64 +251,7 @@
                     <div class="funnel-evidence">
                         <p class="evidence-title">Evidencias del sistema</p>
 
-                        <div class="evidence-gallery">
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/creatives/creative1_EC0680.png" alt="Creativo publicitario EC0680">
-                            <span>Meta Ads · Creativo 1</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/creatives/creative2_EC0680.png" alt="Creativo publicitario EC0680">
-                            <span>Meta Ads · Creativo 2</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/screenshots/ads_meta_01.png" alt="Administrador de anuncios Meta">
-                            <span>Meta Ads · Administrador</span>
-                            </article>
-
-                            <article class="evidence-card wide">
-                            <video controls src="assets/projects/cdeo/seminarios/videos/landing_home.mp4"></video>
-                            <span>Landing · Registro al seminario</span>
-                            </article>
-
-                            <article class="evidence-card wide">
-                            <video controls src="assets/projects/cdeo/seminarios/videos/landing_recorrido_EC0946.mp4"></video>
-                            <span>Landing · Registro a beca</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/screenshots/nutricion1_EC0680.png" alt="Correo de nutrición">
-                            <span>Nutrición · Correo</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/screenshots/nutricion2_EC0680.png" alt="WhatsApp de nutrición">
-                            <span>Nutrición · WhatsApp</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/screenshots/zoom1_EC0680.png" alt="Seminario por Zoom">
-                            <span>Seminario · Zoom 1</span>
-                            </article>
-
-                            <article class="evidence-card">
-                            <img src="assets/projects/cdeo/seminarios/ads/screenshots/zoom2_EC0680.png" alt="Seminario por Zoom">
-                            <span>Seminario · Zoom 2</span>
-                            </article>
-
-                            <article class="evidence-card wide">
-                            <video controls src="assets/projects/cdeo/seminarios/videos/landing_formulario.mp4"></video>
-                            <span>Venta · Formulario</span>
-                            </article>
-
-                            <article class="evidence-card wide">
-                            <video controls src="assets/projects/cdeo/seminarios/videos/pago_EC1309.mp4"></video>
-                            <span>Venta · Landing de pago</span>
-                            </article>
-
-                        </div>
+                        <div id="evidenceContainer"></div>
                     </div>
 
                 </div>
@@ -350,6 +300,7 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/project01.js"></script>
 
 </body>
 
