@@ -332,3 +332,17 @@
     padding: 32px 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .automation-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .automation-comparison article {
+    padding: 32px 24px;
+  }
+
+  .automation-challenge > p:last-child {
+    font-size: clamp(28px, 9vw, 44px);
+  }
+}
