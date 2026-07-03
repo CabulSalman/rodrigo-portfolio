@@ -264,3 +264,39 @@
     padding: 30px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .b2b-story {
+    grid-template-columns: 1fr;
+  }
+
+  .b2b-story article {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width:768px){
+
+    .b2b-results-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .b2b-assets-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .b2b-asset-card.wide{
+
+        grid-column:span 1;
+
+    }
+
+}

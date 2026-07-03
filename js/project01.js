@@ -10,6 +10,7 @@ const evidenceData = {
     evidences: [
       { type: "image", label: "Creativo 1", src: "assets/projects/cdeo/seminarios/ads/creatives/creative1_EC0680.png" },
       { type: "image", label: "Creativo 2", src: "assets/projects/cdeo/seminarios/ads/creatives/creative2_EC0680.png" },
+      { type: "image", label: "Creativo 3", src: "assets/projects/cdeo/seminarios/ads/creatives/creative3_EC0581.png" },
       { type: "image", label: "Ads Manager", src: "assets/projects/cdeo/seminarios/ads/screenshots/ads_meta_01.png" }
     ]
   },
