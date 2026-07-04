@@ -346,3 +346,41 @@
     font-size: clamp(28px, 9vw, 44px);
   }
 }
+
+@media (max-width: 768px) {
+  .creative-section {
+    padding: 100px 22px;
+  }
+
+  .creative-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-header h2 {
+    letter-spacing: -2px;
+  }
+}
+
+@media(max-width:768px){
+
+    .contact-section{
+
+        padding:100px 22px;
+
+    }
+
+
+    .contact-content h2{
+
+        letter-spacing:-2px;
+
+    }
+
+
+    .contact-links{
+
+        flex-direction:column;
+
+    }
+
+}
