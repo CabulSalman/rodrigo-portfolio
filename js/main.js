@@ -22,8 +22,11 @@ if (hero && heroBg && heroContent) {
 const caseItems = document.querySelectorAll(".case-item");
 const casePreviewText = document.querySelector("#casePreviewText");
 
+const casePreviewImage = document.querySelector("#casePreviewImage");
+
 caseItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     casePreviewText.textContent = item.dataset.preview;
+    casePreviewImage.src = item.dataset.image;
   });
 });
